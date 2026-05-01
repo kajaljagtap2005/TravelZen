@@ -1,8 +1,6 @@
 # TravelZen
 TravelZen is a premium, fully responsive  web application designed to deliver a luxury travel booking experience.
 
-**TravelZen** is a premium, fully responsive front-end web application designed to deliver a luxury travel booking experience. Built entirely with vanilla HTML, CSS, and JavaScript, it features a modern glassmorphism UI, simulated authentication, and interactive booking modals.
-
 # ✈️ TravelZen | Luxury Travel Agency
 
 <div align="center">
@@ -12,6 +10,8 @@ TravelZen is a premium, fully responsive  web application designed to deliver a 
 </div>
 
 <br>
+
+**TravelZen** is a premium, fully responsive front-end web application designed to deliver a luxury travel booking experience. Built entirely with vanilla HTML, CSS, and JavaScript, it features a modern glassmorphism UI, simulated authentication, and interactive booking modals.
 
 ## ✨ Key Features
 
