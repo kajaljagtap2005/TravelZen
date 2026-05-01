@@ -1,0 +1,78 @@
+<!-- Inside your <main> tag of about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | TavelZen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Travel<span>Zen</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="fas fa-bars hamburger" onclick="document.getElementById('navLinks').classList.toggle('active')"></i>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <header class="page-header" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074');">
+            <h1>Our Story</h1>
+            <p>Redefining luxury travel since 2015</p>
+        </header>
+
+        <section class="container">
+            <div class="about-grid">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071" alt="Our Team" class="about-img">
+                </div>
+                <div class="about-text">
+                    <h2>We craft journeys, not just trips.</h2>
+                    <p>At WanderLust, we believe that traveling is an art. For over a decade, we have dedicated ourselves to curating exclusive, immersive, and unforgettable experiences across the globe.</p>
+                    <p>Whether you're seeking a serene escape on a private island, an adventurous trek through ancient ruins, or a deep dive into vibrant cultures, our experts handle every detail with precision and care.</p>
+                    
+                    <div class="stats-container">
+                        <div class="stat-box"><h4>10+</h4><p>Years Active</p></div>
+                        <div class="stat-box"><h4>150+</h4><p>Destinations</p></div>
+                        <div class="stat-box"><h4>50k+</h4><p>Travelers</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <i class="fas fa-gem"></i>
+                    <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; margin-bottom: 10px;">Luxury First</h3>
+                    <p style="color: var(--text-muted);">Handpicked 5-star accommodations and VIP experiences.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; margin-bottom: 10px;">Expert Guides</h3>
+                    <p style="color: var(--text-muted);">Local experts who know the hidden gems of every city.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-headset"></i>
+                    <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; margin-bottom: 10px;">24/7 Support</h3>
+                    <p style="color: var(--text-muted);">Round-the-clock concierge service wherever you are.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h2 style="font-family: 'Playfair Display'; color: var(--accent); margin-bottom: 10px;">TravelZen Travel</h2>
+        <p>&copy; 2026 TravelZen Travel Agency. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

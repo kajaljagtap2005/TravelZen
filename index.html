@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelZen | Luxury Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Travel<span>Zen</span></a>
+        
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div style="display: flex; align-items: center; gap: 1.5rem;">
+            <!-- ADDED ID="auth-btn" HERE -->
+            <a href="login.html" id="auth-btn" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Login <i class="fas fa-user" style="margin-left: 5px;"></i></a>
+            <i class="fas fa-bars hamburger" onclick="document.getElementById('navLinks').classList.toggle('active')"></i>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Massive Hero Section -->
+        <header class="page-header" style="height: 85vh; background-image: url('https://images.unsplash.com/photo-1484821582734-6c6c9f99a672?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRyYXZlbCUyMGFnZW5jeXxlbnwwfHwwfHx8MA%3D%3D');">
+            <h1 style="font-size: clamp(3rem, 5vw, 5.5rem); max-width: 900px; line-height: 1.1;">Discover Your Next Great Adventure</h1>
+            <p style="font-size: 1.3rem; max-width: 700px; margin-top: 1rem; margin-bottom: 2.5rem;">Explore the world's most breathtaking destinations with our expertly curated, luxury travel packages.</p>
+            <a href="destinations.html" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem;">
+                Start Exploring <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+            </a>
+        </header>
+
+        <section class="container">
+            <!-- Trending Destinations Section -->
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 3rem; color: var(--primary-dark); font-family: 'Playfair Display', serif;">Trending Destinations</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 0.5rem;">Locations our travelers are loving right now.</p>
+            </div>
+            
+            <div class="dest-grid" style="margin-bottom: 6rem;">
+                <!-- Destination 1 -->
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2" alt="Santorini">
+                    <div class="dest-overlay">
+                        <h3>Santorini, Greece</h3>
+                        <p>Stunning sunsets and pristine waters.</p>
+                        <a href="packages.html" class="btn btn-primary">View Packages</a>
+                    </div>
+                </div>
+                <!-- Destination 2 -->
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1534008897995-27a23e859048" alt="Peru">
+                    <div class="dest-overlay">
+                        <h3>Machu Picchu, Peru</h3>
+                        <p>Ancient history in the high Andes.</p>
+                        <a href="packages.html" class="btn btn-primary">View Packages</a>
+                    </div>
+                </div>
+                <!-- Destination 3 -->
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a" alt="Thailand">
+                    <div class="dest-overlay">
+                        <h3>Phuket, Thailand</h3>
+                        <p>Tropical paradise with vibrant nightlife.</p>
+                        <a href="packages.html" class="btn btn-primary">View Packages</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Packages Section -->
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 3rem; color: var(--primary-dark); font-family: 'Playfair Display', serif;">Featured Packages</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 0.5rem;">Hand-picked experiences for the modern traveler.</p>
+            </div>
+
+            <div class="pkg-grid">
+                <!-- Package 1 -->
+                <div class="pkg-card">
+                    <span class="pkg-badge">Best Seller</span>
+                    <div style="overflow: hidden;"><img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a" class="pkg-img"></div>
+                    <div class="pkg-body">
+                        <div class="pkg-meta">
+                            <span><i class="fas fa-clock"></i> 5 Days / 4 Nights</span>
+                            <span><i class="fas fa-map-marker-alt"></i> France</span>
+                        </div>
+                        <h3 class="pkg-title">Romantic Paris Getaway</h3>
+                        <p style="color: var(--text-muted);">Experience the magic of Paris with private Seine cruises, Eiffel Tower dining, and luxury stays.</p>
+                        <div class="pkg-amenities">
+                            <i class="fas fa-plane" title="Flight Included"></i> 
+                            <i class="fas fa-hotel" title="Luxury Hotel"></i> 
+                            <i class="fas fa-utensils" title="Fine Dining"></i>
+                        </div>
+                        <div class="pkg-footer">
+                            <div class="pkg-price">$1,299 <span style="font-size: 1rem; color: var(--text-muted);">/pp</span></div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="pkg-card">
+                    <span class="pkg-badge" style="background: var(--primary);">New</span>
+                    <div style="overflow: hidden;"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4" class="pkg-img"></div>
+                    <div class="pkg-body">
+                        <div class="pkg-meta">
+                            <span><i class="fas fa-clock"></i> 7 Days / 6 Nights</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Indonesia</span>
+                        </div>
+                        <h3 class="pkg-title">Bali Wellness Retreat</h3>
+                        <p style="color: var(--text-muted);">Rejuvenate your soul with daily yoga, organic meals, and spa treatments in an exclusive jungle villa.</p>
+                        <div class="pkg-amenities">
+                            <i class="fas fa-plane" title="Flight Included"></i> 
+                            <i class="fas fa-spa" title="Spa Treatments"></i> 
+                            <i class="fas fa-coffee" title="Breakfast Included"></i>
+                        </div>
+                        <div class="pkg-footer">
+                            <div class="pkg-price">$899 <span style="font-size: 1rem; color: var(--text-muted);">/pp</span></div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="packages.html" class="btn btn-outline" style="padding: 1rem 2.5rem; font-size: 1.1rem;">View All Packages</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h2 style="font-family: 'Playfair Display'; color: var(--accent); margin-bottom: 10px;">TravelZen Travel</h2>
+        <p>&copy; 2026 TravelZen Travel Agency. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
